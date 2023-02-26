@@ -31,4 +31,4 @@ if hookmetamethod and typeof(hookmetamethod) == 'function' then
 	end)
 end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/old.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/donatehack/script_not_my/main/old.lua"))()
