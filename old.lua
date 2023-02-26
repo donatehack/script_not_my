@@ -4,7 +4,7 @@
 	Removal of initial credits to the authors is prohibited.
 ]]
 
-if hookmetamethod and typeof(hookmetamethod) == 'function' then
+--[[if hookmetamethod and typeof(hookmetamethod) == 'function' then
 	local oldHook
 	oldHook = hookmetamethod(game, "__namecall", function(self, ...)
 		if getnamecallmethod() == "Kick" then
@@ -23,7 +23,7 @@ if hookmetamethod and typeof(hookmetamethod) == 'function' then
 		return oldHookS(self, ...)
 	end)
 end
-
+]]
 repeat
 	task.wait()
 until game:IsLoaded()
