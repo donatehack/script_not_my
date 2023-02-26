@@ -4,16 +4,14 @@
 	Removal of initial credits to the authors is prohibited.
 ]]
 
---[[if hookmetamethod and typeof(hookmetamethod) == 'function' then
+if hookmetamethod and typeof(hookmetamethod) == 'function' then
 	local oldHook
-	oldHook = hookmetamethod(game, "__namecall", function(self, ...)
-		if getnamecallmethod() == "Kick" then
-			return warn('haha bypassed')
+	oldHook = hookmetamethod(game, "__namecall", function(self, ...)			
 		end
 		return oldHook(self, ...)
 	end)
 end
-]]
+
 if hookmetamethod and typeof(hookmetamethod) == 'function' then
 	local oldHookS
 	oldHookS = hookmetamethod(game, "__namecall", function(self, ...)
