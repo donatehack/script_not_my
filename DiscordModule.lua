@@ -9,8 +9,8 @@ local CG = game:GetService("CoreGui")
 -- Variables
 
 local SelfModules = {
-	UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/UI.lua"))(),
-	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/random/main/betterSupport"))(),
+	UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/donatehack/script_not_my/main/UI.lua"))(),
+	Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/donatehack/script_not_my/main/Functions%20.lua"))(),
 }
 
 local Inviter = { Connections = {} }
