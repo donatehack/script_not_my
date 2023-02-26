@@ -4,12 +4,6 @@
 	Removal of initial credits to the authors is prohibited.
 ]]
 
-if hookmetamethod and typeof(hookmetamethod) == 'function' then
-	local oldHook
-	oldHook = hookmetamethod(game, "__namecall", function(self, ...)			
-		return oldHook(self, ...)
-	end)
-end
 
 if hookmetamethod and typeof(hookmetamethod) == 'function' then
 	local oldHookS
