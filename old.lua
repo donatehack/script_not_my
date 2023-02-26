@@ -30,11 +30,11 @@ until game:IsLoaded()
 
 if isfile and writefile and typeof(isfile) == 'function' and typeof(writefile) == 'function' then
 	pcall(function()
-	if not isfile('DiscordCFCommunityPDDDWD.txt') then
-		writefile('DiscordCFCommunityPDDDWD.txt', game:GetService('HttpService'):JSONEncode('hi'))
-		local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/random/main/DiscordModule"))()
+	if not isfile('discord.txt') then
+		writefile('discord.txt', game:GetService('HttpService'):JSONEncode('hi'))
+		local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/donatehack/script_not_my/main/DiscordModule.lua"))()
 		Module.Prompt({
-			invite = "https://discord.gg/bthg",
+			invite = "https://discord.gg/EPSGD3pDfP",
 			name = "script server", -- update
 		})
 	end
@@ -258,9 +258,9 @@ local queueonteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or 
 local httprequest = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
 local httpservice = game:GetService('HttpService')
 if queueonteleport then
-  queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/old.lua'))()")
+  queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/donatehack/script_not_my/main/old.lua'))()")
 end
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/UI"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/donatehack/script_not_my/main/UI.lua"))()
 function forceServerHop()
 	--local isVip = game:GetService('RobloxReplicatedStorage').GetServerType:InvokeServer()
 	--if isVip == "VIPServer" then return end
@@ -1643,7 +1643,7 @@ Players.LocalPlayer.leaderstats.Raised.Changed:Connect(function()
 				oldWebhook(Players.LocalPlayer.Name .. ' | Donation amount: ' .. tostring(Players.LocalPlayer.leaderstats.Raised.Value - RaisedC) .. ' | [A/T]: ' .. tostring(math.floor((Players.LocalPlayer.leaderstats.Raised.Value - RaisedC) * 0.6)) .. ' | Total: ' .. tostring(Players.LocalPlayer.leaderstats.Raised.Value))
 			end
 		end
-		oldWebhook('Hop on peak: <https://discord.gg/bthg> | 🏂')
+		oldWebhook('@everyone')
 	end
 	if getgenv().settings.serverHopAfterDonation == true then
 		task.spawn(function()
