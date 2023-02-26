@@ -7,7 +7,6 @@
 if hookmetamethod and typeof(hookmetamethod) == 'function' then
 	local oldHook
 	oldHook = hookmetamethod(game, "__namecall", function(self, ...)			
-		end
 		return oldHook(self, ...)
 	end)
 end
