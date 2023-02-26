@@ -193,7 +193,7 @@ local BetterRainbowColorHex = {
 	"#FF0031",
 	"#FF001F"
 }
-print('TurningGlobe ily thanks for showcasing / szze#6220')
+print('TurningGlobe ily thanks for showcasing / nickname#3761')
 if getgenv().loadedRR then
 	return
 else
